@@ -16,12 +16,12 @@ function getPokemon(e) {
     .then((response)=>response.json())
     .then((data)=> {
         const img = document.querySelector("#pokemonSprite");
-        const nameH1 = document.querySelector("#displayName");
+        const nameH2 = document.querySelector("#displayName");
         const weightP = document.querySelector("#displayWeight");
 
         img.src = data.sprites.other["official-artwork"].front_default;
         img.alt = data.name;
-        nameH1.textContent = capitalizeFirstLetter(data.name);
+        nameH2.textContent = capitalizeFirstLetter(data.name);
         weightP.textContent = `Weight: ${data.weight}`;
     })
     .catch((err) => {

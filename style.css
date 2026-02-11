@@ -1,0 +1,95 @@
+.libre-baskerville-regular {
+  font-family: "Libre Baskerville", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.lato-regular {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+    background-image: linear-gradient(to bottom right, #213448, #547792, #94B4C1);
+    background-repeat: no-repeat;
+    background-image: fixed;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    align-items: center;
+}
+
+h1 {
+    align-self: top;
+    text-align: center;
+    font-size: 70px;
+    color: #ffffff;
+    text-shadow: 2px 1px 5px black; 
+    font-family: "libre-baskerville-regular", sans-serif;
+    /*transition: width 5s, height 4s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 1s;*/
+}
+
+/*h1:hover {
+    transform: translate(10px, 20px);
+}*/
+
+.searchBox {
+    text-align: center;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
+    padding: 10px;
+    width: 250px;
+    border-radius: 100px;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+}
+
+#pokemonName {
+    border-radius: 50px 0px 0px 50px;
+    color: rgb(255, 255, 255);
+    background:transparent;
+    padding: 10px;
+    flex: 1;
+    border: none;
+}
+
+::placeholder {
+    color: #cacaca;
+}
+
+button {
+    border-radius: 0px 50px 50px 0px;
+    border: none;
+    color: #ffffff;
+    padding: 10px;
+    background: transparent;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #213448;
+    color: #ffffff;
+    transform: scale(0.9);
+}
+
+.pokemonBox {
+    border-radius: 20px;
+    border: 10px black;
+    width: 300px;
+    text-align: center;
+}
+
+#pokemonSprite {
+    width: 200px;
+}
