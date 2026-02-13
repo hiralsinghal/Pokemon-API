@@ -12,7 +12,7 @@
 }
 
 body {
-    background-image: linear-gradient(to bottom right, #213448, #547792, #94B4C1);
+    background-image: linear-gradient(to bottom right, #BF092F, #132440, #16476A,#3B9797);
     background-repeat: no-repeat;
     background-image: fixed;
     min-height: 100vh;
@@ -47,10 +47,11 @@ h1 {
     padding: 10px;
     width: 250px;
     border-radius: 100px;
-    display: flex;
     overflow: hidden;
     align-items: center;
     justify-content: center;
+    margin: 20px auto;
+    display: block;
 }
 
 #pokemonName {
@@ -83,13 +84,31 @@ button:hover {
     transform: scale(0.9);
 }
 
-.pokemonBox {
+.pokemonBox {   
     border-radius: 20px;
-    border: 10px black;
-    width: 300px;
+    border: 9px solid rgb(234, 234, 234);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
+    width: 500px;
+    height: 300px;
+    text-align: center;
+    padding: 5px;
+    margin: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    grid-template-areas: "header header" "image details";
+    align-items: center;
+}
+
+#displayName {
+    grid-area: header;
     text-align: center;
 }
 
 #pokemonSprite {
     width: 200px;
+}
+
+.pokemonInfo {
+    color:#ffffff;
+    font-family: "lato-regular","lato","sans serif";
 }
