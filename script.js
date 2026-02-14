@@ -22,17 +22,17 @@ function getPokemon(e) {
         const abilityP =document.querySelector("#displayAbility");
         const baseExperienceP = document.querySelector("#displayBaseExperience")
         const typeP = document.querySelector("#displayType");
-        const movesP = document.querySelector("#displayMoves");
+        const moveP = document.querySelector("#displayMove");
 
         img.src = data.sprites.other["official-artwork"].front_default;
         img.alt = data.name;
         nameH2.textContent = capitalizeFirstLetter(data.name);
         weightP.textContent = `Weight: ${data.weight}`;
         heightP.textContent = `Height: ${data.height}`;
-        abilityP.textContent = `Ability: ${capitalizeFirstLetter(data.abilities[0].ability.name)}`;
+        abilityP.textContent = `Ability: ${capitalizeFirstLetter(data.abilities[0].ability.name)} & ${capitalizeFirstLetter(data.abilities[1].ability.name)}`;
         baseExperienceP.textContent = `Base Experience: ${data.base_experience}`;
         typeP.textContent = `Type: ${capitalizeFirstLetter(data.types[0].type.name)}`;
-        movesP.textContent = `Moves: ${capitalizeFirstLetter(data.moves[0].move.name)}`;
+        moveP.textContent = `Moves: ${capitalizeFirstLetter(data.moves[0].move.name)}`;
     })
     .catch((err) => {
         console.log("Pokemon not found", err);
